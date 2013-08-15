@@ -2,6 +2,7 @@
 import sys
 import os
 import difflib
+import matplotlib
 
 def decodeSpeech(hmmd,lmdir,dictp,wavfile):
         """
@@ -48,10 +49,13 @@ if __name__ == "__main__":
 	    f.close()
 	    originalSent.append(original.lower())
             perRatio.append(difflib.SequenceMatcher(None, recognised.lower(), original.lower()).ratio())
+	print '----------------------------------------------------------------'
 	print recognisedSent 
+	print '----------------------------------------------------------------'
 	print originalSent
         #allRatio = difflib.SequenceMatcher(None, recognisedSent, originalSent).ratio()
-	a = 0
-	for i in perRatio:
-		a += i
-	print a / len(filedict)
+	print '----------------------------------------------------------------'
+	print 'average ratio:',sum(perRatio)/len(filedict)
+	print 'min ratio:', min(perRatio)
+	print 'max ratio:', max(perRatio)
+
