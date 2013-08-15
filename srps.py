@@ -22,25 +22,36 @@ def decodeSpeech(hmmd,lmdir,dictp,wavfile):
         result = speechRec.get_hyp()
 
         return result[0]
+def fileTypeFilter(dir):
+	filelist = sorted(os.listdir('./test/'))
+	filedict = dict([filelist[i:i+2] for i in range(0, len(filelist), 2)])
 
+	return filedict
 
 if __name__ == "__main__":
         hmdir = "/usr/share/pocketsphinx/model/hmm/wsj1/"
         lmd = "/usr/share/pocketsphinx/model/lm/wsj/wlist5o.3e-7.vp.tg.lm.DMP"
         dictd = "/usr/share/pocketsphinx/model/lm/wsj/wlist5o.dic"
-        filelist = sorted(os.listdir("./test/"))
-	print filelist
+        filedict = fileTypeFilter('./test/')
 	recognisedSent = list()
 	originalSent = list()
-	for i in range(0, len(filelist), 2):
-            recognised = decodeSpeech(hmdir,lmd,dictd,filelist[i+1])
+	perRatio = list()
+	for i in filedict:
+            recognised = decodeSpeech(hmdir,lmd,dictd, './test/'+filedict[i])
 	    print 'Comparing recognised sentence to origianl one'
             print recognised.lower()
-	    recognisedSent.append(recognised)
-	    f = file(filelist[i], 'rb')
+	    recognisedSent.append(recognised.lower())
+	    f = file('./test/'+ i, 'rb')
 	    original = f.read()[8:-2]
 	    print original
 	    f.seek(0)
 	    f.close()
-	    originalSent.append(original)
-	    difflib.SequenceMatcher(None, recognised, original).rato()
+	    originalSent.append(original.lower())
+            perRatio.append(difflib.SequenceMatcher(None, recognised.lower(), original.lower()).ratio())
+	print recognisedSent 
+	print originalSent
+        #allRatio = difflib.SequenceMatcher(None, recognisedSent, originalSent).ratio()
+	a = 0
+	for i in perRatio:
+		a += i
+	print a / len(filedict)
