@@ -1,5 +1,7 @@
 #!/usr/bin/env python
-import sys,os
+import sys
+import os
+import difflib
 
 def decodeSpeech(hmmd,lmdir,dictp,wavfile):
         """
@@ -36,6 +38,9 @@ if __name__ == "__main__":
             print recognised.lower()
 	    recognisedSent.append(recognised)
 	    f = file(filelist[i], 'rb')
-	    print f.read()[8:-2]
+	    original = f.read()[8:-2]
+	    print original
 	    f.seek(0)
 	    f.close()
+	    originalSent.append(original)
+	    difflib.SequenceMatcher(None, recognised, original).rato()
