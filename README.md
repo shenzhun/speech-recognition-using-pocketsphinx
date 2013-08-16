@@ -51,6 +51,7 @@ Training
   simpleLM <code> https://github.com/skerit/cmusphinx/tree/master/SimpleLM </code>
  
   cmuclmtk <code> http://cmusphinx.sourceforge.net/wiki/tutoriallm </code>
+           <code> http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html </code>
 
 2. Training Acoustic Model
 
