@@ -2,7 +2,6 @@
 import sys
 import os
 import difflib
-import matplotlib
 
 def decodeSpeech(hmmd,lmdir,dictp,wavfile):
         """
