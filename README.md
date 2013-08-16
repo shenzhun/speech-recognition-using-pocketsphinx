@@ -19,7 +19,7 @@ Installation
    
    Install Guide <code>http://cmusphinx.sourceforge.net/wiki/tutorialpocketsphinx</code> 
 
-   Install on Ubuntu <code> sudo apt-get install pocketsphinx* sphinxbase*</code>
+   Install on Ubuntu <code> sudo apt-get install pocketsphinx sphinxbase</code>
    
    Details about the installed packages <code>https://launchpad.net/ubuntu/+source/pocketsphinx</code>
   
@@ -37,4 +37,15 @@ Using pocketsphinx
 2. Language Model <code>/usr/share/pocketsphinx/model/lm/wsj/wlist5o.3e-7.vp.tg.lm.DMP</code>
 3. Dictionary     <code>/usr/share/pocketsphinx/model/lm/wsj/wlist5o.dic</code>
 4. Corpus <code>timit/test/dr1/faks0</code>
-5. Accurancy  average = 80.31%  min = 56.52% max = 100%
+5. Accurancy  average = 80.31%   min = 56.52%  max = 100%
+
+Training
+---------
+1. Training Language Model
+
+  lmtool <code> http://www.speech.cs.cmu.edu/tools/lmtool.html </code>
+  simpleLM <code> https://github.com/skerit/cmusphinx/tree/master/SimpleLM </code>
+  cmuclmtk <code> http://cmusphinx.sourceforge.net/wiki/tutoriallm </code>
+
+2. Training Acoustic Model
+
