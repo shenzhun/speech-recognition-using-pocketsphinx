@@ -44,7 +44,9 @@ Training
 1. Training Language Model
 
   lmtool <code> http://www.speech.cs.cmu.edu/tools/lmtool.html </code>
+ 
   simpleLM <code> https://github.com/skerit/cmusphinx/tree/master/SimpleLM </code>
+ 
   cmuclmtk <code> http://cmusphinx.sourceforge.net/wiki/tutoriallm </code>
 
 2. Training Acoustic Model
