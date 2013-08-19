@@ -54,4 +54,6 @@ Training
            <code> http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html </code>
 
 2. Training Acoustic Model
+  
+   <code> http://cmusphinx.sourceforge.net/wiki/tutorialam </code>
 
