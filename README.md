@@ -14,6 +14,7 @@ Download
    CMU Sphinx Downloads <code> http://cmusphinx.sourceforge.net/wiki/download</code>
    
    The DARPA TIMIT Acoustic-Phonetic Continuous Speech Corpus(TIMIT) -- Training and Test Data NIST Speech Disc CD1-1.1
+   <code> http://www.ldc.upenn.edu/Catalog/catalogEntry.jsp?catalogId=LDC93S1 </code>
 
 
 Installation
