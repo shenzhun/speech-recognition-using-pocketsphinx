@@ -58,3 +58,11 @@ Training
   
    <code> http://cmusphinx.sourceforge.net/wiki/tutorialam </code>
 
+Testing
+---------
+1. TIMIT corpus
+
+2. Capture sound
+
+Using python to capture sound <code>http://people.csail.mit.edu/hubert/pyaudio/</code>
+
