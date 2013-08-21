@@ -59,11 +59,12 @@ Training
       http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html
       <p>
        Given a large corpus of text in a file a.text, but no specified vocabulary,</p> 
-       <code>#compute the word unigram counts
-       cat a.text | text2wfreq > a.wfreq  
-       #Convert the word unigram counts into a vocabulary consisting of the 20,000 most common words 
+          #compute the word unigram counts
+
+          cat a.text | text2wfreq > a.wfreq  
+          #Convert the word unigram counts into a vocabulary consisting of the 20,000 most common words 
        
-       cat a.wfreq | wfreq2vocab -top 20000 > a.vocab  
+          cat a.wfreq | wfreq2vocab -top 20000 > a.vocab  
        #Generate a binary id 3-gram of the training text, based on this vocabulary
        
        cat a.text | text2idngram -vocab a.vocab > a.idngram  
