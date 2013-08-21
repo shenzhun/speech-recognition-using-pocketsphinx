@@ -5,31 +5,31 @@ Using pocketsphinx and NLTK to build speech recognition system
 
 Overview
 --------
-   CMU Sphinx toolkit <code> http://cmusphinx.sourceforge.net/wiki/tutorialoverview </code>
+   CMU Sphinx toolkit  http://cmusphinx.sourceforge.net/wiki/tutorialoverview
 
-   Backgroud <code> http://cmusphinx.sourceforge.net/wiki/tutorialbeforestart </code>
+   Backgroud           http://cmusphinx.sourceforge.net/wiki/tutorialbeforestart 
 
 Download
 --------
-   CMU Sphinx Downloads <code> http://cmusphinx.sourceforge.net/wiki/download</code>
+   CMU Sphinx Downloads  http://cmusphinx.sourceforge.net/wiki/download
    
    The DARPA TIMIT Acoustic-Phonetic Continuous Speech Corpus(TIMIT) -- Training and Test Data NIST Speech Disc CD1-1.1
-   <code> http://www.ldc.upenn.edu/Catalog/catalogEntry.jsp?catalogId=LDC93S1 </code>
+    http://www.ldc.upenn.edu/Catalog/catalogEntry.jsp?catalogId=LDC93S1
 
 
 Installation
 ------------
 1. Decoder: pocketsphinx and sphinxbase
    
-   Install Guide <code>http://cmusphinx.sourceforge.net/wiki/tutorialpocketsphinx</code> 
+   Install Guide  http://cmusphinx.sourceforge.net/wiki/tutorialpocketsphinx 
 
    Install on Ubuntu <code> sudo apt-get install pocketsphinx sphinxbase</code>
    
-   Details about the installed packages <code>https://launchpad.net/ubuntu/+source/pocketsphinx</code>
+   Details about the installed packages https://launchpad.net/ubuntu/+source/pocketsphinx
   
 2. Language Model Training Tool: cmuclmtk
 
-   Install Guide <code>http://cmusphinx.sourceforge.net/wiki/cmuclmtkdevelopment</code>
+   Install Guide http://cmusphinx.sourceforge.net/wiki/cmuclmtkdevelopment
 
 3. Acoustic Model Training: sphinxtrain 
 
@@ -47,15 +47,15 @@ Training
 ---------
 1. Training Language Model
 
-  lmtool <code> http://www.speech.cs.cmu.edu/tools/lmtool.html </code>
+  lmtool http://www.speech.cs.cmu.edu/tools/lmtool.html 
   + create corpus .txt file
   + open http://www.speech.cs.cmu.edu/tools/lmtool.html, submit the corpus .txt file and download the .tar.gz file
   + decompress the .tar.gz file and find .lm, .dic, 
  
-  simpleLM <code> https://github.com/skerit/cmusphinx/tree/master/SimpleLM </code>
+  simpleLM  https://github.com/skerit/cmusphinx/tree/master/SimpleLM
  
-  cmuclmtk <code> http://cmusphinx.sourceforge.net/wiki/tutoriallm </code>
-           <code> http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html </code>
+  cmuclmtk  http://cmusphinx.sourceforge.net/wiki/tutoriallm
+            http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html
   Given a large corpus of text in a file a.text, but no specified vocabulary
   + Compute the word unigram counts 
 
@@ -83,7 +83,7 @@ Training
 
 2. Training Acoustic Model
   
-   <code> http://cmusphinx.sourceforge.net/wiki/tutorialam </code>
+   http://cmusphinx.sourceforge.net/wiki/tutorialam
 
 Testing
 ---------
