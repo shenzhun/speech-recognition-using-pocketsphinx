@@ -80,7 +80,7 @@ Training
        idngram2lm -vocab a.vocab -idngram - \
        -binary a.binlm -spec_num 5000000 15000000
        echo "perplexity -text b.text" | evallm -binary a.binlm 
-      </pre> </code>
+      </code></pre>
 2. Training Acoustic Model
   
    http://cmusphinx.sourceforge.net/wiki/tutorialam
