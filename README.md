@@ -55,11 +55,11 @@ Training
   simpleLM  https://github.com/skerit/cmusphinx/tree/master/SimpleLM
  
   cmuclmtk  http://cmusphinx.sourceforge.net/wiki/tutoriallm
+            
             http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html
       <p>
-       #Given a large corpus of text in a file a.text, but no specified vocabulary,</p> 
+       Given a large corpus of text in a file a.text, but no specified vocabulary,</p> 
        <code>#compute the word unigram counts
-
        cat a.text | text2wfreq > a.wfreq  
        #Convert the word unigram counts into a vocabulary consisting of the 20,000 most common words 
        
