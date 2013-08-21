@@ -69,7 +69,7 @@ Training
           #Convert the idngram into a binary format language model
             idngram2lm -idngram a.idngram -vocab a.vocab -binary a.binlm  
           #Compute the perplexity of the language model, with respect to some test text b.text
-            evallm -binary a.binlm </code>
+            evallm -binary a.binlm
           
           Alternatively, some of these processes can be piped together:
             cat a.text | text2wfreq | wfreq2vocab -top 20000 > a.vocab
