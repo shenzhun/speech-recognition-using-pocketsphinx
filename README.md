@@ -56,7 +56,7 @@ Training
  
   cmuclmtk  http://cmusphinx.sourceforge.net/wiki/tutoriallm
             http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html
-      <code>
+      <pre><code>
        #Given a large corpus of text in a file a.text, but no specified vocabulary, compute the word unigram counts 
 
        cat a.text | text2wfreq > a.wfreq
@@ -80,7 +80,7 @@ Training
        idngram2lm -vocab a.vocab -idngram - \
        -binary a.binlm -spec_num 5000000 15000000
        echo "perplexity -text b.text" | evallm -binary a.binlm 
-       </code>
+      </pre> </code>
 2. Training Acoustic Model
   
    http://cmusphinx.sourceforge.net/wiki/tutorialam
