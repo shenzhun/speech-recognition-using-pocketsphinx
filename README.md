@@ -56,22 +56,22 @@ Training
  
   cmuclmtk  http://cmusphinx.sourceforge.net/wiki/tutoriallm
             http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html
-  Given a large corpus of text in a file a.text, but no specified vocabulary
-  + Compute the word unigram counts 
+    
+    + Given a large corpus of text in a file a.text, but no specified vocabulary, compute the word unigram counts 
 
-   cat a.text | text2wfreq > a.wfreq
-  + Convert the word unigram counts into a vocabulary consisting of the 20,000 most common words 
+      cat a.text | text2wfreq > a.wfreq
+    + Convert the word unigram counts into a vocabulary consisting of the 20,000 most common words 
 
-   cat a.wfreq | wfreq2vocab -top 20000 > a.vocab
-  + Generate a binary id 3-gram of the training text, based on this vocabulary
+      cat a.wfreq | wfreq2vocab -top 20000 > a.vocab
+    + Generate a binary id 3-gram of the training text, based on this vocabulary
 
-   cat a.text | text2idngram -vocab a.vocab > a.idngram
-  + Convert the idngram into a binary format language model 
+      cat a.text | text2idngram -vocab a.vocab > a.idngram
+    + Convert the idngram into a binary format language model 
 
-   idngram2lm -idngram a.idngram -vocab a.vocab -binary a.binlm
-  + Compute the perplexity of the language model, with respect to some test text b.text
+      idngram2lm -idngram a.idngram -vocab a.vocab -binary a.binlm
+    + Compute the perplexity of the language model, with respect to some test text b.text
 
-   evallm -binary a.binlm
+    evallm -binary a.binlm
 
    Alternatively, some of these processes can be piped together:
 
@@ -91,5 +91,5 @@ Testing
 
 2. Capture sound
 
-Using python to capture sound <code>http://people.csail.mit.edu/hubert/pyaudio/</code>
+Using python to capture sound  http://people.csail.mit.edu/hubert/pyaudio/
 
