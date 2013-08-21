@@ -48,9 +48,9 @@ Training
 1. Training Language Model
 
   lmtool <code> http://www.speech.cs.cmu.edu/tools/lmtool.html </code>
-  1. create corpus txt file
-  2. open http://www.speech.cs.cmu.edu/tools/lmtool.html, submit the corpus and download the tar.gz file
-  3. decompress the tar file and find .lm, .dic, 
+  + create corpus .txt file
+  + open http://www.speech.cs.cmu.edu/tools/lmtool.html, submit the corpus .txt file and download the .tar.gz file
+  + decompress the .tar.gz file and find .lm, .dic, 
  
   simpleLM <code> https://github.com/skerit/cmusphinx/tree/master/SimpleLM </code>
  
