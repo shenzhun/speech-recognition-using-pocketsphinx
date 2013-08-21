@@ -61,7 +61,6 @@ Training
        Given a large corpus of text in a file a.text, but no specified vocabulary,</p> 
           
           #compute the word unigram counts
-
           cat a.text | text2wfreq > a.wfreq  
           #Convert the word unigram counts into a vocabulary consisting of the 20,000 most common words 
        
