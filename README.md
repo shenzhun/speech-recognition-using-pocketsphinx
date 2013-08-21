@@ -56,7 +56,7 @@ Training
  
   cmuclmtk  http://cmusphinx.sourceforge.net/wiki/tutoriallm
             
-            http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html
+      http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html
       <p>
        Given a large corpus of text in a file a.text, but no specified vocabulary,</p> 
        <code>#compute the word unigram counts
