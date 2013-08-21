@@ -59,6 +59,7 @@ Training
       http://www.speech.cs.cmu.edu/SLM/toolkit_documentation.html
       <p>
        Given a large corpus of text in a file a.text, but no specified vocabulary,</p> 
+          
           #compute the word unigram counts
 
           cat a.text | text2wfreq > a.wfreq  
