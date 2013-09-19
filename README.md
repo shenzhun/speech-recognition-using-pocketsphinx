@@ -84,6 +84,7 @@ Training
 
 Testing
 ---------
-1. TIMIT corpus
+
+TIMIT corpus
 
 
