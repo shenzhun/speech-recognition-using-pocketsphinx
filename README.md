@@ -86,5 +86,19 @@ Testing
 ---------
 
 TIMIT corpus
-
-
+<pre><code>
+	recognisedSent = list()
+	originalSent = list()
+	for i in range(0, len(filelist), 2):
+            recognised = decodeSpeech(hmdir,lmd,dictd,filelist[i+1])
+	    print 'Comparing recognised sentence to origianl one'
+            print recognised.lower()
+	    recognisedSent.append(recognised)
+	    f = file(filelist[i], 'rb')
+	    original = f.read()[8:-2]
+	    print original
+	    f.seek(0)
+	    f.close()
+	    originalSent.append(original)
+	    difflib.SequenceMatcher(None, recognised, original).rato()
+</code></pre>
