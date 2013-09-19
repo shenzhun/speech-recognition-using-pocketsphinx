@@ -85,7 +85,7 @@ Training
 Testing
 ---------
 
-TIMIT corpus
+Testing the accuracy of this system based on TIMIT corpus.
 <pre><code>
 	recognisedSent = list()
 	originalSent = list()
