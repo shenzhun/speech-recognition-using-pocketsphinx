@@ -1,0 +1,13 @@
+Howto
+
+1. tools of cmuclmtk
+
+go to /usr/local/bin, tool of cmuclmtk are as below:
+
+idngram2lm   
+idngram2stats      
+mergeidngram     
+text2idngram
+text2wfreq    
+text2wngram       
+wfreq2vocab
