@@ -1,0 +1,59 @@
+Language model created by QuickLM on Sun Sep 22 10:02:25 EDT 2013
+Copyright (c) 1996-2000
+Carnegie Mellon University and Alexander I. Rudnicky
+
+This model based on a corpus of 7 sentences and 12 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=12
+ngram 2=17
+ngram 3=11
+
+\1-grams:
+-0.8539 </s> -0.3010
+-0.8539 <s> -0.2355
+-1.6990 BACKWARD -0.2355
+-1.6990 DOWN -0.2355
+-1.6990 FORWARD -0.2355
+-1.6990 LEFT -0.2355
+-1.6990 RIGHT -0.2355
+-1.6990 SLOW -0.2923
+-1.6990 SPEED -0.2923
+-1.6990 STOP -0.2355
+-1.3979 TURN -0.2833
+-1.6990 UP -0.2355
+
+\2-grams:
+-1.1461 <s> BACKWARD 0.0000
+-1.1461 <s> FORWARD 0.0000
+-1.1461 <s> SLOW 0.0000
+-1.1461 <s> SPEED 0.0000
+-1.1461 <s> STOP 0.0000
+-0.8451 <s> TURN 0.0000
+-0.3010 BACKWARD </s> -0.3010
+-0.3010 DOWN </s> -0.3010
+-0.3010 FORWARD </s> -0.3010
+-0.3010 LEFT </s> -0.3010
+-0.3010 RIGHT </s> -0.3010
+-0.3010 SLOW DOWN 0.0000
+-0.3010 SPEED UP 0.0000
+-0.3010 STOP </s> -0.3010
+-0.6021 TURN LEFT 0.0000
+-0.6021 TURN RIGHT 0.0000
+-0.3010 UP </s> -0.3010
+
+\3-grams:
+-0.3010 <s> BACKWARD </s>
+-0.3010 <s> FORWARD </s>
+-0.3010 <s> SLOW DOWN
+-0.3010 <s> SPEED UP
+-0.3010 <s> STOP </s>
+-0.6021 <s> TURN LEFT
+-0.6021 <s> TURN RIGHT
+-0.3010 SLOW DOWN </s>
+-0.3010 SPEED UP </s>
+-0.3010 TURN LEFT </s>
+-0.3010 TURN RIGHT </s>
+
+\end\

@@ -1,0 +1,19 @@
+1. find the installation directory
+
+/usr/local/bin
+
+2. the tools below will be used to train the language model
+
+allen@allenalux:/usr/local/bin$ ls -l | grep m
+-rwxr-xr-x 1 root root 12997 Aug 16 17:21 binlm2arpa
+-rwxr-xr-x 1 root root 27855 Aug 16 17:21 evallm
+-rwxr-xr-x 1 root root 42843 Aug 16 17:21 idngram2lm
+-rwxr-xr-x 1 root root 16023 Aug 16 17:21 idngram2stats
+-rwxr-xr-x 1 root root 43286 Aug 16 17:21 lm_combine
+-rwxr-xr-x 1 root root 35982 Aug 16 17:21 lm_interpolate
+-rwxr-xr-x 1 root root 18165 Aug 16 17:21 mergeidngram
+-rwxr-xr-x 1 root root 17886 Aug 16 17:21 ngram2mgram
+-rwxr-xr-x 1 root root 17351 Aug 16 17:21 text2idngram
+-rwxr-xr-x 1 root root 18809 Aug 16 17:21 text2wngram
+-rwxr-xr-x 1 root root 25899 Aug 16 17:21 wngram2idngram
+
